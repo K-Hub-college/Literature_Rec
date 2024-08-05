@@ -18,10 +18,6 @@ body {
     background-color: #fffaf0;
 }
 
-.default th, .default td {
-    color: #2f4f4f;
-}
-
 /* Dark Academia Aesthetic */
 .dark-academia {
     background-color: #3b3b3b; /* Dark gray */
@@ -36,10 +32,6 @@ body {
 .dark-academia #recommendation-box {
     background-color: #4a4a4a; /* Medium gray */
     color: #e0d8d8; /* Light gray */
-}
-
-.dark-academia th, .dark-academia td {
-    color: #e0d8d8;
 }
 
 /* 2000s Core Aesthetic */
@@ -58,10 +50,6 @@ body {
     color: #000000; /* Black */
 }
 
-.twenty-hundreds-core th, .twenty-hundreds-core td {
-    color: #000000;
-}
-
 /* Tech-Cyber Aesthetic */
 .tech-cyber {
     background-color: #00ccff; /* Cyan */
@@ -78,10 +66,6 @@ body {
     color: #000000; /* Black */
 }
 
-.tech-cyber th, .tech-cyber td {
-    color: #000000;
-}
-
 /* Artsy Aesthetic */
 .artsy {
     background-color: #ff69b4; /* Pink */
@@ -96,10 +80,6 @@ body {
 .artsy #recommendation-box {
     background-color: #ffb6c1; /* Light pink */
     color: #000000; /* Black */
-}
-
-.artsy th, .artsy td {
-    color: #000000;
 }
 
 /* General Styles for Other Elements */
@@ -213,6 +193,71 @@ tbody tr:nth-child(odd) {
     background-color: #fffaf0;
 }
 
+/* Change the table colors based on the aesthetic */
+.dark-academia table, .dark-academia th, .dark-academia td {
+    border-color: #e0d8d8;
+}
+
+.dark-academia thead {
+    background-color: #4a4a4a;
+}
+
+.dark-academia tbody tr:nth-child(even) {
+    background-color: #3b3b3b;
+}
+
+.dark-academia tbody tr:nth-child(odd) {
+    background-color: #2e2e2e;
+}
+
+.twenty-hundreds-core table, .twenty-hundreds-core th, .twenty-hundreds-core td {
+    border-color: #000000;
+}
+
+.twenty-hundreds-core thead {
+    background-color: #000000;
+}
+
+.twenty-hundreds-core tbody tr:nth-child(even) {
+    background-color: #ffcc00;
+}
+
+.twenty-hundreds-core tbody tr:nth-child(odd) {
+    background-color: #ffff99;
+}
+
+.tech-cyber table, .tech-cyber th, .tech-cyber td {
+    border-color: #000000;
+}
+
+.tech-cyber thead {
+    background-color: #00ccff;
+}
+
+.tech-cyber tbody tr:nth-child(even) {
+    background-color: #e0ffff;
+}
+
+.tech-cyber tbody tr:nth-child(odd) {
+    background-color: #ccffff;
+}
+
+.artsy table, .artsy th, .artsy td {
+    border-color: #000000;
+}
+
+.artsy thead {
+    background-color: #ff69b4;
+}
+
+.artsy tbody tr:nth-child(even) {
+    background-color: #ffc0cb;
+}
+
+.artsy tbody tr:nth-child(odd) {
+    background-color: #ffb6c1;
+}
+
 .book-cover {
     border: 2px solid #2f4f4f; /* Dark slate gray border */
     padding: 20px;
@@ -222,6 +267,7 @@ tbody tr:nth-child(odd) {
     font-weight: bold;
     font-size: 1.2em;
 }
+
 
 
 

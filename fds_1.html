@@ -6,7 +6,7 @@
     <title>Literature Recommendations</title>
     <link rel="stylesheet" href="fds_1_style.css">
 </head>
-<body>
+<body class="default">
     <header>
         <h1>Literature</h1>
         <h2>Good Books are like good people, you just can't get enough of them</h2>
@@ -22,25 +22,19 @@
     </nav>
 
     <section id="recommendation">
-        <img id="image1" src="book1.jpg" alt="Image 1" style="display: none;">
-        <img id="image2" src="book2.jpg" alt="Image 2" style="display: none;">
-        <img id="image3" src="book3.jpg" alt="Image 3" style="display: none;">
-        <img id="image4" src="book4.jpg" alt="Image 4" style="display: none;">
-        <img id="image5" src="book5.jpg" alt="Image 5" style="display: none;">
-        <img id="image6" src="book6.jpg" alt="Image 6" style="display: none;">
-
+        <img id="initial-image" src="book2.jpg" alt="Existing initial image">
         <div id="recommendation-box"></div>
     </section>
 
     <section id="form">
         <h2>Get Your Book Recommendation</h2>
-        <form onsubmit="return handleSubmit()" novalidate>
+        <form onsubmit="return handleSubmit()">
             <label for="life-phase">Life Phase:</label>
             <input type="text" id="life-phase" name="life-phase" required>
             
             <label for="age">Age:</label>
-            <input type="text" id="age" name="age" required>
-            <div id="age-error" style="color: red; display: none;">Please enter a valid age.</div>
+            <input type="number" id="age" name="age" required>
+            <div id="age-error" style="display:none; color: red;">Please enter a valid numerical age.</div>
             
             <label for="city">City:</label>
             <input type="text" id="city" name="city" required>
@@ -82,6 +76,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
