@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Recommendations</title>
+    <link rel="stylesheet" href="fds_1_style.css">
+</head>
+<body>
+    <header>
+        <h1>Literature</h1>
+        <h2>Good Books are like good people, you just can't get enough of them</h2>
+        <div class="author-strip">Authored and developed by Kshitij Ghadge</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#recommendation">Recommendation</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#previous-visitors">Previous Visitors</a></li>
+        </ul>
+    </nav>
+
+    <section id="recommendation">
+        <img id="image1" src="book1.jpg" alt="Image 1" style="display: none;">
+        <img id="image2" src="book2.jpg" alt="Image 2" style="display: none;">
+        <img id="image3" src="book3.jpg" alt="Image 3" style="display: none;">
+        <img id="image4" src="book4.jpg" alt="Image 4" style="display: none;">
+        <img id="image5" src="book5.jpg" alt="Image 5" style="display: none;">
+        <img id="image6" src="book6.jpg" alt="Image 6" style="display: none;">
+
+        <div id="recommendation-box"></div>
+    </section>
+
+    <section id="form">
+        <h2>Get Your Book Recommendation</h2>
+        <form onsubmit="return handleSubmit()" novalidate>
+            <label for="life-phase">Life Phase:</label>
+            <input type="text" id="life-phase" name="life-phase" required>
+            
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+            <div id="age-error" style="color: red; display: none;">Please enter a valid age.</div>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="favorites">Previous Favorites:</label>
+            <textarea id="favorites" name="favorites" rows="4" required></textarea>
+            
+            <label for="aesthetic">Choose Aesthetic:</label>
+            <select id="aesthetic" name="aesthetic" required>
+                <option value="dark-academia">Dark Academia</option>
+                <option value="2000s-core">2000s Core</option>
+                <option value="tech-cyber">Tech-Cyber</option>
+                <option value="artsy">Artsy</option>
+            </select>
+            
+            <input type="submit" value="Get Recommendation">
+        </form>
+    </section>
+
+    <section id="previous-visitors">
+        <h2>Previous Visitors and Recommendations</h2>
+        <table id="visitors-table">
+            <thead>
+                <tr>
+                    <th>Life Phase</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Previous Favorites</th>
+                    <th>Aesthetic</th>
+                    <th>Recommendation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Previous visitors data will go here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

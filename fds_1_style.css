@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    background-color: #fdf5e6; /* Default light beige */
+    color: #2f4f4f; /* Dark slate gray text */
+    font-family: 'Georgia', serif; /* Serif font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Default Aesthetic */
+.default {
+    background-color: #fdf5e6;
+    color: #2f4f4f;
+}
+
+.default .section {
+    background-color: #fffaf0;
+}
+
+.default th, .default td {
+    color: #2f4f4f;
+}
+
+/* Dark Academia Aesthetic */
+.dark-academia {
+    background-color: #3b3b3b; /* Dark gray */
+    color: #e0d8d8; /* Light gray */
+    font-family: 'Garamond', serif;
+}
+
+.dark-academia .section {
+    background-color: #2e2e2e; /* Slightly lighter dark gray */
+}
+
+.dark-academia #recommendation-box {
+    background-color: #4a4a4a; /* Medium gray */
+    color: #e0d8d8; /* Light gray */
+}
+
+.dark-academia th, .dark-academia td {
+    color: #e0d8d8;
+}
+
+/* 2000s Core Aesthetic */
+.twenty-hundreds-core {
+    background-color: #ffcc00; /* Bright yellow */
+    color: #000000; /* Black */
+    font-family: 'Arial', sans-serif;
+}
+
+.twenty-hundreds-core .section {
+    background-color: #ffff99; /* Light yellow */
+}
+
+.twenty-hundreds-core #recommendation-box {
+    background-color: #ffffcc; /* Cream */
+    color: #000000; /* Black */
+}
+
+.twenty-hundreds-core th, .twenty-hundreds-core td {
+    color: #000000;
+}
+
+/* Tech-Cyber Aesthetic */
+.tech-cyber {
+    background-color: #00ccff; /* Cyan */
+    color: #000000; /* Black */
+    font-family: 'Courier New', monospace;
+}
+
+.tech-cyber .section {
+    background-color: #e0ffff; /* Light cyan */
+}
+
+.tech-cyber #recommendation-box {
+    background-color: #ccffff; /* Light cyan */
+    color: #000000; /* Black */
+}
+
+.tech-cyber th, .tech-cyber td {
+    color: #000000;
+}
+
+/* Artsy Aesthetic */
+.artsy {
+    background-color: #ff69b4; /* Pink */
+    color: #000000; /* Black */
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.artsy .section {
+    background-color: #ffc0cb; /* Light pink */
+}
+
+.artsy #recommendation-box {
+    background-color: #ffb6c1; /* Light pink */
+    color: #000000; /* Black */
+}
+
+.artsy th, .artsy td {
+    color: #000000;
+}
+
+/* General Styles for Other Elements */
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.author-strip {
+    text-align: center;
+    font-size: 1em;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    border-top: 1px solid #8b4513;
+    border-bottom: 1px solid #8b4513;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea, form select {
+    margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="number"], form textarea, form select {
+    padding: 10px;
+    border: 1px solid #cd853f;
+    border-radius: 5px;
+}
+
+form input[type="submit"], form input[type="button"] {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover, form input[type="button"]:hover {
+    background-color: #a0522d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #8b4513;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #deb887;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5dc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fffaf0;
+}
+
+.book-cover {
+    border: 2px solid #2f4f4f; /* Dark slate gray border */
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 200px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
+
+
